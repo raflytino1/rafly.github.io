@@ -1,0 +1,170 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+body {
+  background-color: #4783c0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5a67d8;
+  padding: 15px 25px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #4c51bf;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #3182ce;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  background-color: #23c123;
+  color: #f6fcf7;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #41b200;
+  color: #13cbf9;
+}
+
+/* Card Section */
+.cards-section {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #69c3ff;
+}
+
+.cards-section h2 {
+  font-size: 36px;
+  color: #141425;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #7db0f2;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 20px;
+  color: #718096;
+}
+
+.card .btn {
+  background-color: #13f40f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #2b6cb0;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d3748;
+  color: #a0aec0;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}

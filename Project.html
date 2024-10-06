@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe ya</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Cafe ya</div>
+      <ul>
+        <li><a href="#">Makanan</a></li>
+        <li><a href="#">Minuman</a></li>
+        <li><a href="#">Snack</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+      <div class="container">
+        <h1>Cafe ya</h1>
+        <p>Menyajikan Makanan dan Minuman terbaik di Bumi</p>
+        <a href="#" class="btn">Pesan</a>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+    <section class="cards-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Rekomen Makanan,Minuman,dan Snack</h2>
+        <div class="card-container">
+          <div class="card" data-aos="zoom-in" data-aos-delay="100">
+            <h3>Nasi goreng Amerisya Usyara</h3>
+            <p>
+              Nasi Goreng dipadukan dengan Daging Ayam,dan Sapi,dengan Telor
+              mata sapi Yang sangat menggoda untuk dimakan.
+            </p>
+            <img src="nasi goreng.jpeg" alt="" />
+            <a href="#" class="btn">Mau</a>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="200">
+            <h3>Ice Kopi susu cef</h3>
+            <p>
+              Kopi dengan biji kopi terbaik diseluruh dunia dengan susu yang
+              diperas langsung dari peternakan sapi terbaik menjadikan rasa yang
+              nikmat cocok untuk menghilangkan dahaga.
+            </p>
+            <img src="kopi susu.jpeg" alt="" />
+            <a href="#" class="btn">mau</a>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="300">
+            <h3>Spaggeti Carbonara</h3>
+            <p>Spaggeti yang dibuat langsung oleh chef terbaik di dunia.</p>
+            <img src="spagetti.jpeg" alt="" />
+            <a href="#" class="btn">mau</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials" data-aos="fade-up">
+      <div class="container">
+        <h2>Rating tempat</h2>
+        <div class="testimonial-container">
+          <div class="testimonial" data-aos="flip-left" data-aos-delay="100">
+            <p>"Tempat yang bagus"</p>
+            <span>- fredrin</span>
+          </div>
+          <div class="testimonial" data-aos="flip-left" data-aos-delay="200">
+            <p>"Tempat yang rekomen."</p>
+            <span>- kadita</span>
+          </div>
+          <div class="testimonial" data-aos="flip-left" data-aos-delay="300">
+            <p>"Mahal harganya."</p>
+            <span>- Dexter</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Cafe ya.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">^</a>
+
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+
+      // Back-to-top button functionality
+      window.addEventListener("scroll", function () {
+        var backToTopButton = document.querySelector(".back-to-top");
+        if (window.pageYOffset > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
